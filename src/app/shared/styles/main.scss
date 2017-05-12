@@ -1,0 +1,51 @@
+
+html,body {
+	height:100%;
+	width:100%
+}
+.mainDiv {
+background-image: url("app/shared/images/MainBlog.jpg");
+height:100%;
+}
+
+.form-Heading {
+	text-align: center;
+    padding: 30px;
+    font-size: 25px;
+    color: #fff;
+
+}
+.form-div {
+	margin:0 auto;
+	background: #58595d;
+    padding: 20px;
+    color:#fff;
+    
+}
+.blogsDiv{
+	margin:20px;
+}
+.blogBox {
+	padding:10px;
+	box-shadow: 0px 0px 19px #58595d;
+	background: silver;
+	margin:10px;
+}
+.comment-button {
+	border-bottom: 1px solid grey;
+	margin-left: 24px;
+	color:#fff;
+}
+.readMore-button {
+	border-bottom: 1px solid grey;
+	color:#fff;
+}
+.writeblog-button{
+	background:#58595d;
+	color:#fff !important;
+}
+.blogform {
+	padding: 20px;
+    background: silver;
+    margin: 30px;
+}

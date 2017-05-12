@@ -1,0 +1,55 @@
+<div class="mainDiv">
+<h1 class="form-Heading">
+  {{title}}
+</h1>
+
+<div class="col-sm-8 form-div">
+	<form>
+   <div class="form-group col-sm-12">
+    <label for="exampleInputname">Name</label>
+    <input type="input" class="form-control" id="exampleInputname" name="Name" placeholder="Name" [(ngModel)]="user.Name" #Name="ngModel" required>
+    <div *ngIf="Name.errors && (Name.dirty || Name.touched)" class="alert alert-danger">
+    <div [hidden]="!Name.errors.required">
+    Name is Required
+    </div>
+    </div>
+  </div>
+  <div class="form-group col-sm-12 ">
+  <div class="row">
+  <div class="col-sm-6">
+  <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male" name="gender" [(ngModel)]="user.gender" #gender="ngModel"> Male
+</label>
+</div>
+<div class="col-sm-6">
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="female"  name="gender" [(ngModel)]="user.gender" #gender="ngModel"> Female
+</label>
+</div>
+</div>
+</div>
+<div class="form-group col-sm-12">
+<div class="row">
+  <div class="form-group col-sm-6">
+    <label for="exampleInputphone">Phone Number</label>
+    <input type="input" class="form-control" id="exampleInputphone" name="phonenumber" placeholder="Phone Number" [(ngModel)]="user.phonenumber" #phonenumber="ngModel">
+  </div>
+    <div class="form-group col-sm-6">
+    <label for="exampleInputage">Age</label>
+    <input type="input" class="form-control" id="exampleInputage" placeholder="Age, should be > 18" name="age" [(ngModel)]="user.age" #age="ngModel">
+  </div>
+  </div>
+  </div>
+  <div class="form-group col-sm-12">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email" [(ngModel)]="user.email" #email="ngModel">
+  </div>
+  <div class="form-group col-sm-12">
+    <label for="exampleInputPassword1">Password</label>  
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" [(ngModel)]="user.password" #password="ngModel">
+  </div>
+
+  <button type="submit" class="btn btn-default btn-lg" (click)="getIn(user)">GetIn</button>
+</form>
+</div>
+</div>
