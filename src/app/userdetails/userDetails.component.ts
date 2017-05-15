@@ -19,7 +19,7 @@ constructor(private router : Router, private loginService : LoginService, privat
 
 userdata = this.loginService.getUserDetails();
 blogDetails = this.blogService.getBlogDetails();
-console.log(blogDetails);
+
 
   writeBlog() {
        this.router.navigate(['/blog']);

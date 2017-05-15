@@ -5,9 +5,7 @@ import { userDetailsComponent } from './userDetails/userDetails.component';
 import { loginComponent } from './login/login.component';
 import { blogComponent } from './blog/blog.component';
 
-const routes=[
-
-  
+const routes = [
 
     { path: 'userDetails', component: userDetailsComponent },
     { path: 'login', component: loginComponent },
@@ -24,3 +22,4 @@ const routes=[
   ]
 })
 export class appRoutingModule {}
+export const routingComponents = [userDetailsComponent,loginComponent,blogComponent]
